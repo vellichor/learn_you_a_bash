@@ -12,7 +12,7 @@ Let's look at our friend `ls` again.
 $ ls
 ```
 
-The output of this command is a list of all the files in the current working directory, given as relative paths. But ls has a lot of different ways to display the data. For example, what if we want ls to show us a marker for which of our directory entries are files, and which are directories? We can use the `-F` switch. Note the `-` in front of that -- by programming convention, we mark flag commands with the `-`, which is sometimes spoken out loud as "hyphen", "minus", or "tack." If you work with me in person, you will hear me call it "minus" -- I would tell you to run `ls -F` by saying "run ell-ess minus capital eff."
+The output of this command is a list of all the files in the current working directory, given as relative paths. But ls has a lot of different ways to display the data. For example, what if we want ls to show us a marker for which of our directory entries are files, and which are directories? We can use the `-F` switch. Note the `-` in front of that -- by programming convention, we mark flag commands with the `-`, which is sometimes spoken out loud as "hyphen", "dash", "minus", or "tack." If you work with me in person, you will hear me call it "minus" -- I would tell you to run `ls -F` by saying "run ell-ess minus capital eff."
 
 ```
 $ ls -F

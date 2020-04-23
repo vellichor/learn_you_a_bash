@@ -56,17 +56,17 @@ When we refer to a file in `bash` we do it by its path. We could say in this cas
 
 The first argument of `mv` is simple: it's just the path, relative or absolute, to a file or directory that exists on the filesystem. (It has to exist; if you try to change the name of something that doesn't exist, `bash` will inform you that that's nonsense.) The second argument of `mv` can be:
 
-1. The relative or absolute path of the new name you want the file or directory to have OR
-2. The relative or absolute path of an EXISTING DIRECTORY you want the file or directory to be moved into.
+* The relative or absolute path of the new name you want the file or directory to have OR
+* The relative or absolute path of an EXISTING DIRECTORY you want the file or directory to be moved into.
 
 So let's sort that out. There are several possible situations:
 
 1. The destination path does not exist. `mv` assumes you want to create a new item with this path. In this case, _the enclosing directory must already exist_.
-  1. If it doesn't, we can't create an entry inside a non-existent directory, and the operation will fail.
-  1. If it does, `mv` changes the item's path to the one you asked for.
+    1. If it doesn't, we can't create an entry inside a non-existent directory, and the operation will fail.
+    1. If it does, `mv` changes the item's path to the one you asked for.
 1. The destination path exists, and refers to a file.
-  1. If the thing you are moving is also a file, THE EXISTING FILE AT THE DESTINATION PATH WILL BE REPLACED. 
-  1. If the thing you are moving is a directory, this operation will fail.
+    1. If the thing you are moving is also a file, THE EXISTING FILE AT THE DESTINATION PATH WILL BE REPLACED. 
+    1. If the thing you are moving is a directory, this operation will fail.
 1. The destination path exists, and refers to a directory. `mv` assumes you want to move the item into this directory, and creates a new path for the item by sticking the LAST ELEMENT of the item's current path (i.e. the name that `ls` shows for this item) onto the directory path you have given.
 
 Let's put some of this into action and see how it behaves. `pwd` to make sure you're still in your `wild_blue_yonder` directory, and then create a couple of new directories:

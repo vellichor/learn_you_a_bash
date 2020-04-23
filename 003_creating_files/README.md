@@ -40,6 +40,10 @@ And rather than flinging a mammal and a tuber into a water closet, it will tell 
 
 But we don't actually need to use `cat` for this -- we can use `bash` to send `wc` the input DIRECTLY FROM THE FILE. We use the `<` redirection for this. Because the arrow is pointing the other way, we still put the command on the left, and the file on the right. The left-facing arrow means "take the contents on the right, and write them to the thing on the left."
 
+```
+$ wc < potato
+```
+
 We do it this way because, again, `bash` is not too smart. It wants the first thing in each command to be an actual command -- something it can execute. A regular old non-executable text file can't be in that position because `bash` simply can't parse what we want it to be doing in that case. Instead, we supply the command first, followed by the left-facing redirection operator and the file to take the input from.
 
 ## Moving A File

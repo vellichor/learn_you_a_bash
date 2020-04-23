@@ -42,7 +42,7 @@ Now, run `ls` again. In the list of contents in your home directory, you should 
 $ ls wild_blue_yonder
 ```
 
-Well, that wasn't very exciting. Nothing came back. There's nothing actually inside your brand new directory -- it's like an empty file folder, waiting for some contents to be placed inside of it. But what you did see is that by passing an argument to `ls`, we were able to change WHAT DIRECTORY it lists the contents of. (That's what `ls` stands for! "list"! You'll see a lot of that, where commands are constructed from just one or two letters of an English word. There's a reason for this: programmers are very lazy, and don't like to type a lot.)
+Well, that wasn't very exciting. Nothing came back. There's nothing actually inside your brand new directory -- it's like an empty file folder, waiting for some contents to be placed inside of it. But what you did see is that by passing an argument to `ls`, we were able to change WHAT DIRECTORY it lists the contents of. (That's what `ls` stands for: "list"! You'll see a lot of that, where commands are constructed from just one or two letters of an English word. There's a reason for this: programmers are very lazy, and don't like to type a lot.)
 
 But we can do one thing with this new directory that's actually interesting. We can go into it. For that we'll use a new two-letter command to change directories:
 

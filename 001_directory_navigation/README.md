@@ -2,7 +2,7 @@
 
 ## Where am I?
 
-As we discovered in the last section, when you first start `bash` -- we call this opening a new _session_ -- we start out in your home directory. This is denoted by the `~`, which always means "the home directory of ___the currently logged in user__." That is, whoever's username you see in the prompt string, that's whose home directory you'll end up in if you go to `~`.
+As we discovered in the last section, when you first start `bash` -- we call this opening a new _session_ -- we start out in your home directory. This is denoted by the `~`, which always means "the home directory of __the currently logged in user__." That is, whoever's username you see in the prompt string, that's whose home directory you'll end up in if you go to `~`.
 
 `~` is one of a couple of special _path elements_ you'll get to know.
 

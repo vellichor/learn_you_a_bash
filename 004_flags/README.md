@@ -85,7 +85,7 @@ You're looking at the first screen of the help page. Press the spacebar to go fo
 
 You'll see the example line up top, as I described, but I left something out: there's another optional block full of alphabet soup! It looks something like this: `[-ABCFGHLOPRSTUW@abcdefghiklmnopqrstuwx1]`
 
-As you already guessed, the square brackets mean that all of these are optional (of course they are! We've called `ls` by itself plenty of times, so clearly every argument is optional.) You can also notice that the first character in the square brackets is a `-` -- that means that each individual letter of the jumble that comes after it are letters that can be used as flags to `ls`.
+As you already guessed, the square brackets mean that all of these are optional (of course, you already know they are! We've called `ls` by itself plenty of times, so clearly every argument is optional.) You can also notice that the first character in the square brackets is a `-` -- that means that each individual letter of the jumble that comes after it are letters that can be used as flags to `ls`.
 
 There are so many! How do I know what they do? Well, that's what the rest of this very long manpage contains. Hit spacebar a few times to roll forward in the document (you can always go back with `b`.)
 

@@ -85,13 +85,13 @@ You're looking at the first screen of the help page. Press the spacebar to go fo
 
 You'll see the example line up top, as I described, but I left something out: there's another optional block full of alphabet soup! It looks something like this: `[-ABCFGHLOPRSTUW@abcdefghiklmnopqrstuwx1]`
 
-As you already guessed, the square brackets mean that all of these are optional (of course, you already know they are! We've called `ls` by itself plenty of times, so clearly every argument is optional.) You can also notice that the first character in the square brackets is a `-` -- that means that each individual letter of the jumble that comes after it are letters that can be used as flags to `ls`.
+As you already guessed, the square brackets mean that all of these are optional (of course, you already know they are! We've called `ls` by itself plenty of times, so you know that you don't have to supply any arguments at all.) You can also notice that the first character in the square brackets is a `-` -- that means that each individual letter of the jumble that comes after it are letters that can be used as flags to `ls`.
 
 There are so many! How do I know what they do? Well, that's what the rest of this very long manpage contains. Hit spacebar a few times to roll forward in the document (you can always go back with `b`.)
 
 > Fun fact: when you press keys while a program is running, you're using `stdin` again! Your typing is being added to the `stdin` _buffer_, and the program is capturing data off that buffer and using the keycodes you pressed to decide what you want it to do.
 
-As you walk through this document, you'll see an explanation for each and every metavariable and switch that's listed in the example. Some of the explanations may not be familiar to you yet, or might refer to operations you don't yet know how to do. That's fine -- use your Google-fu to check out ones you're interested in, and leave the others for later when you have more context. Your manpage will always be here for you.
+As you walk through this document, you'll see an explanation for each and every metavariable and switch that's listed in the example. Some of the explanations may not be familiar to you yet, or might refer to operations you don't yet know how to do. That's fine -- use your Google-fu to check out ones you're interested in, and leave the others for later when you have more context. Your manpage will always be here for you!
 
 
 

@@ -28,6 +28,24 @@ $ echo "you say potahto" > potato
 
 Try using `ls` and `cat` to check out the new file you made. It's a real file! You can use Finder or your file browser to navigate to it and open it up. It's just a single text file, containing exactly what we told it to. BOY HOWDY.
 
+Now, what happens if we cat to this file again?
+
+```
+$ echo "you say potato" > potato
+```
+
+Go `cat` that file, and see if it says what you expected.
+
+You may have been surprised to see that your original "you say potahto" was gone! This is because the `>` file redirection is the _write_ operation: it will write your string to your path, WRITING RIGHT OVER anything that was there before. This is why I have you working in your own `wild_blue_yonder` directory for now: I don't want you overwriting things that you wanted to keep!
+
+Now, obviously, sometimes you want to be able to write new text into a file WITHOUT destroying what was there. That's a job for the _append_ operator: `>>`. Yeah, it's just two of them. Go try it out:
+
+```
+$ echo "you say potahto" >> potato
+```
+
+Check out the contents of `potato` with `cat` again. This time you should see your new input on a new line, with the old file contents safely intact.
+
 ### Reading From Files
 
 OK, we have our file, and we have, like a goldfish, immediately forgot how many words were in it. We can cat it to `wc` like before:
@@ -36,7 +54,7 @@ OK, we have our file, and we have, like a goldfish, immediately forgot how many 
 $ cat potato | wc
 ```
 
-And rather than flinging a mammal and a tuber into a water closet, it will tell us that the `potato` file has 3 words on one line.
+And rather than flinging a mammal and a tuber into a water closet, it will tell us that the `potato` file has 6 words on 2 lines.
 
 But we don't actually need to use `cat` for this -- we can use `bash` to send `wc` the input DIRECTLY FROM THE FILE. We use the `<` redirection for this. Because the arrow is pointing the other way, we still put the command on the left, and the file on the right. The left-facing arrow means "take the contents on the right, and write them to the thing on the left."
 
